@@ -1,0 +1,11 @@
+body{
+    background-color: grey;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.columns{
+    text-align: center;
+}
