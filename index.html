@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>The Cryptogram Kitchen</title>
+</head>
+
+<body>
+    <header>
+        <h1>The Cryptogram Kitchen</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="columns">
+                <label for="user_input">Scramble Your Words</label>
+                <br>
+                <textarea name="cryptogram" id="cryptogram" cols="30" rows="10" autocorrect="on" autocomplete="on"></textarea>
+            </div>
+            <div class="columns">
+                <label for="scrambled_words">Scrambled Words</label>
+                <br>
+                <textarea readonly name="scrambled_words" id="scrambled_words" cols="30" rows="10" placeholder="waiting..."></textarea>
+            </div>
+        </div>
+        <div class="center">
+            <label for="c1"><input type="radio" name="requirement" value="scramble"
+                    id="c1">Scramble</label>
+            <label for="c2"><input type="radio" name="requirement" value="mono_alphabet"
+                    id="c2">Mono Alphabet</label>
+            <label for="c3"><input type="radio" name="requirement" value="ceaser" id="c3">Ceaser(New!)</label>
+            <label for="shift"> Shift: <input type="number" name="shift"  id="shift"></label>
+            <label for="c4"><input type="radio" name="requirement" value="coming_soon" id="c4">Coming Soon!</label>
+        </div>
+        <button id="scramble" class="btn">Scramble A Word</button>
+    </main>
+    <footer>
+        <h3>Cooking Up Secrets Since 2024</h3>
+    </footer>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
